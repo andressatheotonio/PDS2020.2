@@ -1,0 +1,13 @@
+n1 = input('N1:')
+n2 = input('N2:')
+
+m1 = n1^n2
+m2 = n2^n1
+
+arq1 = fopen('GN1','w+')
+fprintf(arq1, m1)
+fclose(arq1)
+
+arq2 = fopen('GN2','w+')
+fprintf(arq2, m2)
+fclose(arq2)
