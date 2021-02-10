@@ -1,0 +1,11 @@
+coef = [[5,4,-2,6]; [3,6,6,4.5]; [6,12,-2,16];[4,-2,2,-4]]
+indep = [4;13.5;20;6]
+
+resolv = linsolve(coef,indep)
+
+%caso tivesse o communication toolbox instalado, poderia ter usado o randint
+v = round((10-2)*rand(20,1)+2)
+
+ord = sort(v)
+media = mean(v)
+desvio = std(v)
